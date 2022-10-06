@@ -15,6 +15,10 @@
 		25EC2AAA264EC26300682BC1 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EC2AA9264EC26300682BC1 /* WeatherData.swift */; };
 		25EC2AAD264EC84600682BC1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EC2AAC264EC84600682BC1 /* WeatherModel.swift */; };
 		B481610128EF1EE600A8DD13 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481610028EF1EE600A8DD13 /* WeatherViewController.swift */; };
+		B481610828EF3D5F00A8DD13 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481610728EF3D5F00A8DD13 /* BaseView.swift */; };
+		B481610A28EF3DC900A8DD13 /* GenericBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481610928EF3DC900A8DD13 /* GenericBaseView.swift */; };
+		B481610C28EF3E3100A8DD13 /* GenericValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481610B28EF3E3100A8DD13 /* GenericValueProtocol.swift */; };
+		B481610E28EF3E4C00A8DD13 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481610D28EF3E4C00A8DD13 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		25EC2AA9264EC26300682BC1 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		25EC2AAC264EC84600682BC1 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		B481610028EF1EE600A8DD13 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		B481610728EF3D5F00A8DD13 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		B481610928EF3DC900A8DD13 /* GenericBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericBaseView.swift; sourceTree = "<group>"; };
+		B481610B28EF3E3100A8DD13 /* GenericValueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericValueProtocol.swift; sourceTree = "<group>"; };
+		B481610D28EF3E4C00A8DD13 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,7 @@
 		25EC2A88264EB1B800682BC1 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				B481610628EF2E2000A8DD13 /* Utilty */,
+				B481610628EF2E2000A8DD13 /* Utilities */,
 				B481610528EF2E1800A8DD13 /* BaseComponents */,
 				B481610428EF2E1000A8DD13 /* Components */,
 				B481610228EF2DF500A8DD13 /* Scenes */,
@@ -110,15 +118,19 @@
 		B481610528EF2E1800A8DD13 /* BaseComponents */ = {
 			isa = PBXGroup;
 			children = (
+				B481610728EF3D5F00A8DD13 /* BaseView.swift */,
+				B481610928EF3DC900A8DD13 /* GenericBaseView.swift */,
+				B481610B28EF3E3100A8DD13 /* GenericValueProtocol.swift */,
+				B481610D28EF3E4C00A8DD13 /* BaseViewController.swift */,
 			);
 			path = BaseComponents;
 			sourceTree = "<group>";
 		};
-		B481610628EF2E2000A8DD13 /* Utilty */ = {
+		B481610628EF2E2000A8DD13 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Utilty;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +204,12 @@
 			files = (
 				25EC2AAA264EC26300682BC1 /* WeatherData.swift in Sources */,
 				B481610128EF1EE600A8DD13 /* WeatherViewController.swift in Sources */,
+				B481610C28EF3E3100A8DD13 /* GenericValueProtocol.swift in Sources */,
 				25EC2A8A264EB1B800682BC1 /* AppDelegate.swift in Sources */,
+				B481610A28EF3DC900A8DD13 /* GenericBaseView.swift in Sources */,
+				B481610E28EF3E4C00A8DD13 /* BaseViewController.swift in Sources */,
 				25EC2AAD264EC84600682BC1 /* WeatherModel.swift in Sources */,
+				B481610828EF3D5F00A8DD13 /* BaseView.swift in Sources */,
 				25EC2AA6264EBD9300682BC1 /* WeatherManager.swift in Sources */,
 				25EC2A8C264EB1B800682BC1 /* SceneDelegate.swift in Sources */,
 			);
