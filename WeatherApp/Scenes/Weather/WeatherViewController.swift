@@ -15,13 +15,33 @@ class WeatherViewController: UIViewController {
         view.backgroundColor = .white
         
         
-        let iconViewModel = IconLabelViewModel(secondLabelText: "Sunny", thirdLabelText: "34%", spacing: 40)
-        let icon = IconLabelView(data: iconViewModel)
+        let iconViewModel1 = IconLabelViewModel(iconImage: UIImage(systemName: "square.and.arrow.up"),
+                                                secondLabelText: "Sunny",
+                                                thirdLabelText: "05:04",
+                                                stackViewAxis: .vertical,
+                                                spacing: 8)
+        
+        let iconViewModel2 = IconLabelViewModel(iconImage: UIImage(systemName: "square.and.arrow.up"),
+                                                secondLabelText: "Sunrise",
+                                                thirdLabelText: "05:04",
+                                                stackViewAxis: .vertical,
+                                                spacing: 8)
+        
+        let iconViewModel3 = IconLabelViewModel(iconImage: UIImage(systemName: "square.and.arrow.up"),
+                                                secondLabelText: "Sunset",
+                                                thirdLabelText: "05:04",
+                                                stackViewAxis: .vertical,
+                                                spacing: 8)
+        
+        let iconLabelPackViewModel = IconLabelPackViewModel(iconLabelViewModels: [iconViewModel1, iconViewModel2, iconViewModel3])
+        
+        let icon = IconLabelPackView(data: iconLabelPackViewModel)
       
         icon.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(icon)
         
-        icon.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        icon.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 32).isActive = true
+        icon.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -32).isActive = true
         icon.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
     }
